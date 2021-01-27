@@ -1,0 +1,19 @@
+.card{
+    background-color: white;
+}
+
+.card-header{
+    background-color: white;
+    border-style: none;
+    text-align: center;
+    font-size: x-large;
+}
+
+img {
+    filter: blur(4px);
+  }
+
+img:hover {
+    filter: blur(0px);
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }

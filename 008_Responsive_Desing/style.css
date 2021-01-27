@@ -1,0 +1,49 @@
+body{
+    background-image: url('./assets/back_img.svg');
+    background-repeat: no-repeat;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+li{
+    /*float: left;*/
+    margin: 3px;
+}
+
+li a{
+    color: gray;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+summary p{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+}
+
+.content{
+    height: 100px;
+
+}
+
+.btn-try {
+    background-color: teal;
+    border-radius: 30px;
+    color: white;
+}

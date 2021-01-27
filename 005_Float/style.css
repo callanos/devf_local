@@ -1,0 +1,25 @@
+/*  !important hace que en este caso, el color 
+     no cambie con instrucciones posteriores 
+     como las de las clases .izq o .der*/
+.caja{
+    width: 50px;
+    height: 50px;
+    background-color: teal !important;
+    font-size: 20px;
+}
+
+.izq{
+    float: left;
+    background-color: steelblue;
+}
+
+.der{
+    float: right;
+    background-color: sandybrown;
+}
+
+/*Mantiene sin contenido la caja a los lados (both),
+  izq. (left) o der (right).*/
+.parrafo{
+    clear: both;
+}

@@ -1,0 +1,42 @@
+/*
+ Fixed: se ajusta a la pantalla como una capa flotante
+ Sticky: Se mantiene dentro del flujo, no es flotante (pos relativa), pero mantiene la posición
+ Absolute: Se acopla al primer conenedor con pos absoluta o la pantalla en su defecto
+
+
+*/
+
+.navbar{
+    background-color: skyblue;
+    /*position: fixed;*/
+    /*position: sticky;*/
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.caja{
+    background-color: slategrey;
+    height: 30px;
+    width: 30px;
+}
+
+.rel{
+    position: relative;
+    width: 100px;
+    z-index: 0;
+    background-color: slateblue;
+}
+
+.abs{
+    position: absolute;
+    z-index: 1;
+}
+
+.sti{
+    position: sticky;
+}
+
+.fix{
+    position: fixed;
+}

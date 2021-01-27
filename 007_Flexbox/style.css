@@ -1,0 +1,42 @@
+.contenedor{
+    height: 500px; /*vh unidad de medida de la vista en pantalla - Altura*/
+    width: 500px; /*vw unidad de medida de la vista en pantalla - Ancho*/
+    background-color: teal;
+        /*Cambiamos el comportamiento de caja o blok*/
+    display: flex;
+        /*Invierte el orden de row o column */
+    /*flex-direction: column-reverse;*/
+        /*permite conservar el tamaño de los hijos
+        generando saltos de fila o columna*/
+    flex-wrap: wrap;
+    /************** Alineación horizontal**************/
+    /*flex-end: justifica alfinal*/
+    /*
+    1.space-around: Espacios solo en los elementos 
+    de los  bordes laterales
+    2. space-between: espacios entre los elementos
+    3. space-evenly: espacios iguales ente todos
+     los elementos y los laterales
+     4. center: centra el contenido - horizontal*/
+    justify-content: flex-end;
+
+    /************** Alineación vertical**************/
+    /*
+    1. stretch: se acopla a la altura del contenedor
+    si no tiene una altura definida
+    2. 
+    */
+    align-items: stretch;
+
+}
+
+.hijo{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
