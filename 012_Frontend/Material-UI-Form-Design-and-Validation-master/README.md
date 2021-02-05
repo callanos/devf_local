@@ -1,38 +1,24 @@
-# Complete React Material UI Tutorial - Form Design and Validation
+# Build Your Own Confirm Dialog & Notification in React Material UI
 
-These is the demo project used to explaining Material UI topics like
-
-- Form Design
-- Form Validation
-- Insert new record on form submit
+These is the demo project used to explaining, how you create your own Confirm Dialog and Notification component in 
+Material UI.
 
 Complete videos in this series of React Materil UI : https://bit.ly/3k2tUSD
 
 ## Get the Code
 
 ```
-$ git clone https://github.com/CodAffection/Material-UI-Form-Design-and-Validation.git
-$ cd Material-UI-Form-Design-and-Validation
-$ npm install
+$ git clone https://github.com/CodAffection/Create-React-Material-UI-Confirm-Dialog-Notification.git
 ```
 
  ## How it works ?
- 
-### 3. Material UI - Form Design.
 
- Video Tutorial : https://youtu.be/-XKaSCU0ZLM
+ :tv: Video tutorial on this same topic  
+ Url : https://youtu.be/KOryCvYE4_s
  
- <a href="http://www.youtube.com/watch?feature=player_embedded&v=-XKaSCU0ZLM
-" target="_blank"><img src="http://img.youtube.com/vi/-XKaSCU0ZLM/0.jpg" 
-alt="Video Tutorial for Material UI Form Design" width="500" height="400" border="10" /></a>
-
-### 4. Material UI - Form Validation
-
- Video Tutorial : https://youtu.be/4YLa9iuN43c
- 
- <a href="http://www.youtube.com/watch?feature=player_embedded&4YLa9iuN43c
-" target="_blank"><img src="http://img.youtube.com/vi/4YLa9iuN43c/0.jpg" 
-alt="Video Tutorial for Material UI- Form Validation" width="500" height="400" border="10" /></a>
+ <a href="http://www.youtube.com/watch?feature=player_embedded&v=KOryCvYE4_s
+" target="_blank"><img src="http://img.youtube.com/vi/KOryCvYE4_s/0.jpg" 
+alt="Video Tutorial for Material UI Confirm Dialog and Notification" width="500" height="400" border="10" /></a>
 
 
 | :bar_chart:               |  List of Tutorials   |   | :moneybag:           | Support Us                           |

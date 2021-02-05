@@ -23,7 +23,8 @@ const initialFValues = {
     isPermanent: false,
 }
 
-export default function EmployeeForm() {
+export default function EmployeeForm(props) {
+    const { addOrEdit, recordForEdit } = props
 
     const validate = (fieldValues = values) => {
         let temp = { ...errors }
@@ -54,11 +55,17 @@ export default function EmployeeForm() {
 
     const handleSubmit = e => {
         e.preventDefault()
-        if (validate()){
-            employeeService.insertEmployee(values)
-            resetForm()
+        if (validate()) {
+            addOrEdit(values, resetForm);
         }
     }
+
+    useEffect(() => {
+        if (recordForEdit != null)
+            setValues({
+                ...recordForEdit
+            })
+    }, [recordForEdit])
 
     return (
         <Form onSubmit={handleSubmit}>

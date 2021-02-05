@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
+import Todos from './components/Todos';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <MainContent />
-      <Footer />
+      <header className="App-header">
+        <Todos />
+      </header>
     </div>
   );
 }
