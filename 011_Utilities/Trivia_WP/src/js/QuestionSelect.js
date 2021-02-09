@@ -16,8 +16,8 @@ export default function QuestionSelect (){
             <select class="form-control" id="category">
                 <option selected="">Open this select menu</option>
         `;
-       
         response.data.trivia_categories.map((elemento) => {
+
         //return elemento.category;
         //console.log(elemento.name)
         formOptions += `

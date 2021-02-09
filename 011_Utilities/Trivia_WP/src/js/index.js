@@ -1,16 +1,3 @@
-/**
- * class Trivia
- *  1- display questions
- *  2- collect answers
- *  3- display result
- * 
- * class Question
- *  1- data
- *  2- filter
- *  3- getQuestionByType
- * 
- */
-
 import '../css/bootstrap.min.css';
 import '../css/style.css';
 
@@ -32,9 +19,18 @@ const sumbitEl = document.querySelector("#submit");
 const startEl = document.querySelector("#start");
 
 startEl.addEventListener('click', (event) => {
-    trivia.init();
-    event.target.classList.add('hide');
-    sumbitEl.classList.remove("hide");
+  
+    questionsCls.selectedCat = document.getElementById("category").value;
+    questionsCls.selectedDif = document.getElementById("difficulty").value;
+    questionsCls.selectedTyp = document.getElementById("type").value;    
+    questionsCls.getDataForm();
+    //console.log(questionsCls.questions[1]);
+    setTimeout(()=>{
+      trivia.init();
+      event.target.classList.add('hide');
+      sumbitEl.classList.remove("hide");
+    }, 1000);
+
 })
 
 sumbitEl.addEventListener("click", (event) => {
