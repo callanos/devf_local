@@ -10,7 +10,7 @@ export default function Login() {
     const history = useHistory();
     const sendForm = (inputs) => {
         console.log('Ejecuté send form', inputs);
-        axios.post('http://localhost:9000/login', inputs)
+        axios.post('https://ecomerce-master.herokuapp.com/api/v1/login/', inputs)
             .then(({data, status})=>{
                 console.log(data, status);
                 const { token } = data;
@@ -29,8 +29,9 @@ export default function Login() {
         handleSubmit,
     } = useForm(sendForm,
         {
-        email:"mali",
-        password:"gatitos59"
+        email:"callxip@gmail.com",
+        password:"Manizales1",
+        role: "ADMIN"
     });
 
     return(
@@ -43,6 +44,12 @@ export default function Login() {
                     <div className="input-group flex-nowrap">
                     <span className="input-group-text" id="addon-wrapping">@</span>
                     <input type="text" value={inputs.email} required onChange={handleInputs} className="form-control" id="email" placeholder="Email" aria-label="email" aria-describedby="addon-wrapping"/>
+                    </div>
+                </div>
+                <div  className="col-7 mt-3">
+                    <div className="input-group flex-nowrap">
+                    <span className="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" value={inputs.role} required onChange={handleInputs} className="form-control" id="role" placeholder="Role" aria-label="role" aria-describedby="addon-wrapping"/>
                     </div>
                 </div>
                 <div  className="col-7 mt-3">

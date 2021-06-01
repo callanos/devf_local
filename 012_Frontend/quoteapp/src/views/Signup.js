@@ -11,7 +11,7 @@ export default function Signup() {
         console.log('Ejecuté sendForm2Elregresodelosformsasesino', inputs);
         if(inputs.password === inputs.password_confirmation) {
             delete inputs.password_confirmation;
-            axios.post('http://localhost:9000/signup', inputs)
+            axios.post('https://ecomerce-master.herokuapp.com/api/v1/signup/', inputs)
                 .then(({data, status}) => {
                     console.log(data, status);
                     history.push('/');
@@ -52,6 +52,12 @@ export default function Signup() {
                 <div className="input-group flex-nowrap">
                 <span className="input-group-text" id="addon-wrapping">@</span>
                 <input type="text" required value={inputs.last_name} onChange={handleInputs} className="form-control" id="last_name" placeholder="Apellido" aria-label="last_name" aria-describedby="addon-wrapping"/>
+                </div>
+            </div>
+            <div  className="col-7 mt-3">
+                <div className="input-group flex-nowrap">
+                <span className="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" required value={inputs.role} onChange={handleInputs} className="form-control" id="role" placeholder="Rol" aria-label="role" aria-describedby="addon-wrapping"/>
                 </div>
             </div>
             <div  className="col-7 mt-3">
